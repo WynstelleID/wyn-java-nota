@@ -8,6 +8,11 @@ class nota {
         Scanner input = new Scanner(System.in);
         System.out.print("Pesan untuk berapa orang:");
         customerTotal = input.nextInt();
+        if (customerTotal < 0) {
+            System.out.println("Error: negative value entered!");
+            System.out.print("Pesan untuk berapa orang: ");
+            customerTotal = input.nextInt();
+        }
         System.out.print("Pesanan atas nama:");
         customerName = input.next();
         System.out.println();
@@ -24,14 +29,39 @@ class nota {
         System.out.println("Pesanan Anda [batas pesanan 0-10 porsi]");
         System.out.print("   1. Nasi Goreng special      = ");
         nasgorOrder = input.nextInt();
+        if (nasgorOrder < 0) {
+            System.out.println("Error: negative value entered!");
+            System.out.print("   1. Nasi Goreng special      = ");
+            nasgorOrder = input.nextInt();
+        }
         System.out.print("   2. Ayam Bakar Special       = ");
         ayamBakarOrder = input.nextInt();
+        if (ayamBakarOrder < 0) {
+            System.out.println("Error: negative value entered!");
+            System.out.print("   2. Ayam Bakar Special       = ");
+            ayamBakarOrder = input.nextInt();
+        }
         System.out.print("   3. Steak Sirloin Special    = ");
         steakOrder = input.nextInt();
+        if (steakOrder < 0) {
+            System.out.println("Error: negative value entered!");
+            System.out.print("   3. Steak Sirloin Special    = ");
+            steakOrder = input.nextInt();
+        }
         System.out.print("   4. Kwetiaw Siram special    = ");
         kwetiawOrder = input.nextInt();
+        if (kwetiawOrder < 0) {
+            System.out.println("Error: negative value entered!");
+            System.out.print("   4. Kwetiaw Siram special    = ");
+            kwetiawOrder = input.nextInt();
+        }
         System.out.print("   5. Kambing Guling special   = ");
         kambingOrder = input.nextInt();
+        if (kambingOrder < 0) {
+            System.out.println("Error: negative value entered!");
+            System.out.print("   5. Kambing Guling special   = ");
+            kambingOrder = input.nextInt();
+        }
         System.out.println();
         System.out.println();
         System.out.println();
